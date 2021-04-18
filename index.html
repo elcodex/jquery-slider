@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <title>Sliders</title>
+    </head>
+
+    <body>
+        <main class="container">
+            
+            <fieldset class="container__properties">
+                <legend>Select:</legend>
+                
+                <input class="properties__radio" type="radio" name="color-for" value="color" id="text-color" checked>
+                <label for="text-color">color</label>
+                
+                <input class="properties__radio" type="radio" name="color-for" value="background-color" id="background-color">
+                <label for="background-color">backgroundColor</label>
+            </fieldset>
+            
+            <div class="container__colors">
+                <div class="colors__slider slider_red" id="slider-red" data-color="red"></div>
+                <div class="colors__slider slider_green" id="slider-green" data-color="green"></div>
+                <div class="colors__slider slider_blue" id="slider-blue" data-color="blue"></div>
+            </div>
+            
+            <div class="container__preview">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </main>
+    
+        <script src="./script.js"></script>
+    </body>
+</html>
